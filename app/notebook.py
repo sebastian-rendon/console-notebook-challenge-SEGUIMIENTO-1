@@ -31,6 +31,7 @@ class Notebook:
         new_note = Note(code, title, text, importance)
         self.notes.append(new_note)
         return code
+        pass
 
     def delete_note(self, code: int):
         self.notes = [note for note in self.notes if note.code != code]
